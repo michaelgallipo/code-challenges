@@ -11,7 +11,6 @@ function almostIncreasingSequence(sequence) {
     } else if (sequence[i] <= sequence[i - 1]) {
       if (failure > 0) {
         return false;
-        break;
       } else if (
         sequence[i] > sequence[i - 2] ||
         (sequence[i] <= sequence[i - 2] && sequence[i + 1] > sequence[i - 1])
@@ -19,7 +18,6 @@ function almostIncreasingSequence(sequence) {
         failure = 1;
       } else {
         return false;
-        break;
       }
     }
   }
