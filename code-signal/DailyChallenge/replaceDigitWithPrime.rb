@@ -1,26 +1,22 @@
-# def replace(n)
-# 	require 'prime'
+def replaceDigitWithPrime(n)
+    require 'prime'
+    nums = n.digits
+    tot = 0
+    if nums.length == 1
+        return Prime.first(n+1)[-1]
+    else 
+        nums.each.with_index do |num, index|
+            mult = 10 ** (index + 1) / 10
+                if num < 4
+                    tot += Prime.first(num+1)[-1] * mult
+                else
+                    subt = Prime.first(num+1)[-1].digits
+                    tot += subt[0] * mult
+                    tot += subt[1] * (mult * 10)
+                end
+        end
+        return tot
+    end
 
-	
-# 	# # while count <= n
-# 	# 	if Prime.prime?(x)
-# 	# 		return n
-# 	# 	else
-# 	# 		return "fail"
-# 	# 	end
-
-# 	return Prime.first(n+1)[-1]
-
-# end
-
-# p replace(9)
-
-number = 45677
-arr = number.digits
-
-arr.each.with_index do |num, index|
-	p num, index
 end
-
-p 10 ** 2
 
