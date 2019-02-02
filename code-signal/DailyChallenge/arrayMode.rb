@@ -7,9 +7,11 @@ def arrayMode(sequence)
             h[n] = 1
         else
             h[n] += 1
-            if h[n] > max && v != n
+            if h[n] > max 
                 max = h[n]
-                v = n
+                if v != n
+                    v = n
+                end
             end
         end
     end
@@ -18,3 +20,5 @@ def arrayMode(sequence)
 end
 
 # find the mode of an array
+
+p arrayMode([1,2,3,1,1,1,2,2])
