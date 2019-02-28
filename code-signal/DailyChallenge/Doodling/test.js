@@ -20,12 +20,11 @@
 
 // console.log(longestWords(array))
 
-
 // const str = "hastalavistababy"
 
 // const hash = {}
 
-// str.split('').map((char) => { hash[char] = hash[char] + 1 || 1}) 
+// str.split('').map((char) => { hash[char] = hash[char] + 1 || 1})
 
 // const arr = Object.entries(hash).sort((a, b) => b[1] - a[1])
 
@@ -91,21 +90,59 @@
 
 // console.log(averagePair([1,3,3,5,6,7,10,12,19], 8))
 
-function maxSubarraySum(arr, n){
-  let max = -Infinity, x, subT = 0, i = 0, i2 = n - 1;
-  for (x=0; x<n; x++) {
-      subT += arr[x]
-      max = subT
+// function maxSubarraySum(arr, n){
+//   let max = -Infinity, x, subT = 0, i = 0, i2 = n - 1;
+//   for (x=0; x<n; x++) {
+//       subT += arr[x]
+//       max = subT
+//   }
+//   while (i2 <= arr.length - n) {
+//       i2 += 1;
+//       subT = subT - arr[i] + arr[i2]
+//       console.log(subT)
+//       subT > max ? max = subT : max
+//       i += 1;
+//   }
+//   return max
+// }
+
+// console.log(maxSubarraySum([100,200,300,400], 2))
+
+// arr = [1, 2, 3, 4];
+
+// console.log(arr.splice(0, 1));
+
+// console.log(arr);
+
+// function fib(n) {
+//   if (n <= 2) {
+//     return 1;
+//   } else {
+//     return fib(n - 1) + fib(n - 2);
+//   }
+// }
+// console.log(fib(6));
+
+// METHOD TO REVERSE A STRING USING RECURSION
+
+// function reverse(str) {
+//   let arr = str.split("");
+//   if (arr.length === 1) {
+//     return arr[0];
+//   } else {
+//     return arr.pop().concat(reverse(arr.join("")));
+//   }
+// }
+// console.log(reverse("awesome"));
+
+function digitDegree(n) {
+  let c = 0;
+  while (n > 9) {
+    c++;
+    let a = n.toString().split("");
+    n = a.reduce((tot, num) => tot + parseInt(num), 0);
   }
-  while (i2 <= arr.length - n) {
-      i2 += 1;
-      subT = subT - arr[i] + arr[i2]
-      console.log(subT)
-      subT > max ? max = subT : max
-      i += 1;
-  }
-  return max
+  return c;
 }
 
-console.log(maxSubarraySum([100,200,300,400], 2))
-
+console.log(digitDegree(91));

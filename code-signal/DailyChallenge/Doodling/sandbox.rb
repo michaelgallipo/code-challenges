@@ -28,31 +28,35 @@
 #  p letter
 # end
 
-s1, s2 = "Tokyo", "Kyoto"
+# s1, s2 = "Tokyo", "Kyoto"
 
-a1 = s1.downcase.split('').sort
-a2 = s2.downcase.split('').sort
-p a1, a2
-p a1 == a2
+# a1 = s1.downcase.split('').sort
+# a2 = s2.downcase.split('').sort
+# p a1, a2
+# p a1 == a2
 
 
 
-initial_array = ['Tokyo', 'London', 'Rome', 'Donlon', 'Kyoto', 'Paris', 'Sapir', 'Otoky']
+# initial_array = ['Tokyo', 'London', 'Rome', 'Donlon', 'Kyoto', 'Paris', 'Sapir', 'Otoky']
 
-output = []
-i = 1
+# output = []
+# i = 1
 
-initial_array.each do |elem|
-	found = false
-	output.each do |arr|
-		if elem.downcase.split('').sort == arr[0].downcase.split('').sort
-			arr.push(elem)
-			found = true
-		end
-	end
-	if !found 
-		output.push([elem])
-	end
-end
+# initial_array.each do |elem|
+# 	found = false
+# 	output.each do |arr|
+# 		if elem.downcase.split('').sort == arr[0].downcase.split('').sort
+# 			arr.push(elem)
+# 			found = true
+# 		end
+# 	end
+# 	if !found 
+# 		output.push([elem])
+# 	end
+# end
 
-p output
+# p output
+
+a = [[1,3], [2,3]]
+
+p a.first.first
