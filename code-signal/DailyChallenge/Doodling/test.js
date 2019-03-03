@@ -135,14 +135,41 @@
 // }
 // console.log(reverse("awesome"));
 
-function digitDegree(n) {
-  let c = 0;
-  while (n > 9) {
-    c++;
-    let a = n.toString().split("");
-    n = a.reduce((tot, num) => tot + parseInt(num), 0);
-  }
-  return c;
-}
+// function digitDegree(n) {
+//   let c = 0;
+//   while (n > 9) {
+//     c++;
+//     let a = n.toString().split("");
+//     n = a.reduce((tot, num) => tot + parseInt(num), 0);
+//   }
+//   return c;
+// }
 
-console.log(digitDegree(91));
+// console.log(digitDegree(91));
+
+// function binarySearch(arr, n) {
+//   let min = 0,
+//     max = arr.length - 1,
+//     test = Math.trunc(arr.length / 2);
+//   while (min <= max) {
+//     console.log(min, max, test);
+//     if (arr[test] === n) {
+//       return test;
+//     } else if (arr[test] < n) {
+//       min = test + 1;
+//     } else {
+//       max = test - 1;
+//     }
+//     test = Math.floor((min + max) / 2);
+//   }
+//   return -1;
+// }
+// console.log(binarySearch([1, 2, 3, 4, 5], 1));
+
+arr = [1, 2, 3, 4, 5, 6, 7, 8];
+
+let even = arr.map((num, index) => {
+  index;
+});
+
+console.log(even);
