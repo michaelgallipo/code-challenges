@@ -166,10 +166,11 @@
 // }
 // console.log(binarySearch([1, 2, 3, 4, 5], 1));
 
-arr = [1, 2, 3, 4, 5, 6, 7, 8];
+// arr = [1, 2, 3, 4, 5, 6, 7, 8];
 
-let even = arr.map((num, index) => {
-  index;
-});
+// let even = arr.map((num, index) => {
+//   index;
+// });
 
-console.log(even);
+// console.log(even);
+console.log(10 ** (2 - 1));
