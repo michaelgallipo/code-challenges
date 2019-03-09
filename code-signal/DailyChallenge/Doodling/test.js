@@ -173,4 +173,9 @@
 // });
 
 // console.log(even);
-console.log(10 ** (2 - 1));
+// const matrix = [[1, 0, 0, 0], [0, 5, 0, 0], [0, 0, 0, 0], [0, 0, 0, 1000]];
+
+// let l = matrix.length - 1;
+// for (x = 0; x < l; x++) {
+//   let s = matrix[x].slice(x + 1, l + 1).filter(num => num !== 0);
+// }
