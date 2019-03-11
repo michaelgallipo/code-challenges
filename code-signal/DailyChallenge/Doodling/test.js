@@ -179,3 +179,8 @@
 // for (x = 0; x < l; x++) {
 //   let s = matrix[x].slice(x + 1, l + 1).filter(num => num !== 0);
 // }
+const a = [5, 6, 5];
+
+let test = new Set(a);
+
+console.log(test);
