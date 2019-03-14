@@ -1,6 +1,8 @@
 function differentSubstrings(str) {
   let a = str.split("");
   let sub = "",
+    x,
+    y,
     h = {};
 
   for (x = 0; x < a.length; x++) {

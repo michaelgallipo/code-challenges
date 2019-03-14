@@ -57,6 +57,10 @@
 
 # p output
 
-a = [[1,3], [2,3]]
+# a = [[1,3], [2,3]]
 
-p a.first.first
+# p a.first.first
+
+num = 2
+
+p num.digits(2)

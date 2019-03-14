@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 digitDifferenceSort = a => {
   let h = {},
     o = [],
@@ -17,6 +18,7 @@ digitDifferenceSort = a => {
   });
   return sorted;
 };
+// eslint-disable-next-line no-undef
 console.log(digitDifferenceSort([152, 23, 7, 887, 243]));
 
 //Given an array of integers, sort its elements by the difference of their largest and smallest digits.
