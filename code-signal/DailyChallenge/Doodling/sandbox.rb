@@ -61,6 +61,10 @@
 
 # p a.first.first
 
-num = 2
+# num = 2
 
-p num.digits(2)
+# p num.digits(2)
+
+
+
+p Date.today
