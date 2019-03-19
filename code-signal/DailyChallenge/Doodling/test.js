@@ -179,8 +179,23 @@
 // for (x = 0; x < l; x++) {
 //   let s = matrix[x].slice(x + 1, l + 1).filter(num => num !== 0);
 // }
-const a = [5, 6, 5];
+// const a = [5, 6, 5];
 
-let test = new Set(a);
+// let test = new Set(a);
 
-console.log(test);
+// console.log(test);
+
+// let arr = [3, 2, 4, 1];
+
+// flip = arr.splice(0, 3);
+// flip.reverse();
+// arr = [...flip, ...arr];
+// arr.reverse();
+
+// console.log(arr);
+
+const arr = [1, 2, 4, 3];
+
+if (arr === arr.sort((a, b) => a - b)) {
+  console.log("worked");
+}
