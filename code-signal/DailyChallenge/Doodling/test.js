@@ -194,8 +194,15 @@
 
 // console.log(arr);
 
-const arr = [1, 2, 4, 3];
+// const a = 3,
+//   b = 4;
+const str = "cabca";
 
-if (arr === arr.sort((a, b) => a - b)) {
-  console.log("worked");
-}
+let arr = str.split("");
+let h = {};
+let c = 0;
+
+arr.map(letter => (h[letter] ? c : (c += 1)));
+console.log(c);
+
+console.log(h);

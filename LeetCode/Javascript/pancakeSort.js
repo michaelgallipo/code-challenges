@@ -18,7 +18,6 @@ var pancakeSort = function(A) {
       currentIndex = 0;
     }
     if (currentIndex === 0) {
-      //flip to put currentNumber at index currentNumber - 1
       outputArray.push(currentNumber);
       A = flip(A, currentNumber);
     }

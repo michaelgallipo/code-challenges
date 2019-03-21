@@ -69,6 +69,20 @@
 
 # p Date.today
 
-arr = (0..10).to_a
+def palidrome? word1, word2
+  concat_word = word1 + word2
+  # return concat_word == concat_word.reverse
 
-p arr
+  x = 0
+  y = concat_word.length - 1
+  while x < concat_word.length / 2
+    if concat_word[x] != concat_word[y]
+      return false
+    end
+    x += 1
+    y -= 1
+  end
+  return true
+end
+
+p palidrome?("abcde", "dcba")
