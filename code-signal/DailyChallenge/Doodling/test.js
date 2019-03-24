@@ -196,13 +196,26 @@
 
 // const a = 3,
 //   b = 4;
-const str = "cabca";
+// const str = "cabca";
 
-let arr = str.split("");
-let h = {};
-let c = 0;
+// let arr = str.split("");
+// let h = {};
+// let c = 0;
 
-arr.map(letter => (h[letter] ? c : (c += 1)));
-console.log(c);
+// arr.map(letter => (h[letter] ? c : (c += 1)));
+// console.log(c);
 
-console.log(h);
+// console.log(h);
+
+let n = 1122;
+
+let a = n.toString().split("");
+
+let b = a.filter(num => num === a[0]);
+
+console.log(a.length === b.length);
+
+let s = n.toString();
+for (x=1; x<s.length; x++) {
+  if (s[0] !== s[x]) 
+}
