@@ -69,20 +69,24 @@
 
 # p Date.today
 
-def palidrome? word1, word2
-  concat_word = word1 + word2
-  # return concat_word == concat_word.reverse
+# def palidrome? word1, word2
+#   concat_word = word1 + word2
+#   # return concat_word == concat_word.reverse
 
-  x = 0
-  y = concat_word.length - 1
-  while x < concat_word.length / 2
-    if concat_word[x] != concat_word[y]
-      return false
-    end
-    x += 1
-    y -= 1
-  end
-  return true
-end
+#   x = 0
+#   y = concat_word.length - 1
+#   while x < concat_word.length / 2
+#     if concat_word[x] != concat_word[y]
+#       return false
+#     end
+#     x += 1
+#     y -= 1
+#   end
+#   return true
+# end
 
-p palidrome?("abcde", "dcba")
+# p palidrome?("abcde", "dcba")
+
+a = [1, 2, 3]
+b = [4, 5, 6]
+p (a + b).uniq == a.uniq + b.uniq
