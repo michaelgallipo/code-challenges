@@ -339,18 +339,47 @@
 //     })
 // }
 
-let a = ["A", "C"];
-let l = a.length - 1,
-  t = 0;
-// let t = a.reduce((tot, ltr) => {
-// 	console.log(ltr, ltr.charCodeAt(0));
-// 	let val = (ltr.charCodeAt(0) - 64) ** l;
-// 	return tot + val;
-// });
-a.forEach(ltr => {
-  let val = ltr.charCodeAt(0) - 64;
-  console.log(ltr, val);
-  t += val;
-  l--;
-});
-console.log(t);
+// let a = ["A", "C", "E", "G", "I"];
+// let b = a.splice(-1, 1);
+// console.log(a);
+
+// let s = "a??bie";
+// let v = s;
+// while (/[?]/.test(v)) {
+// 	v = v.replace(/[?]/, "a");
+// 	console.log(v);
+// }
+// let o = /[aeiou]{3,}/i.test(v);
+// console.log(o);
+
+// let a = "1234";
+// a = a.split("");
+// let s = a[0] == "-" ? a.shift() : "";
+// let b = [];
+// a.map(n => b.unshift(n));
+// let o = s + b.join("");
+
+// console.log(b, s, o);
+
+const s = [
+	["O", "0"],
+	["M", "1"],
+	["Y", "2"],
+	["E", "5"],
+	["N", "6"],
+	["D", "7"],
+	["R", "8"],
+	["S", "9"]
+];
+
+const c = ["SEND", "MORE", "MONEY"];
+
+let h = {};
+
+s.map(k => (h[k[0]] = k[1]));
+
+let d = c
+	.map(word => word.split("").reduce((s, l) => (s += h[l]), ""))
+	.map(w => parseInt(w));
+let o = d[0] + d[1] == d[2];
+console.log(h, d, o);
