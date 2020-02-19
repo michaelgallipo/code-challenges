@@ -361,25 +361,62 @@
 
 // console.log(b, s, o);
 
-const s = [
-	["O", "0"],
-	["M", "1"],
-	["Y", "2"],
-	["E", "5"],
-	["N", "6"],
-	["D", "7"],
-	["R", "8"],
-	["S", "9"]
-];
+// const a = [10, 20, 40, 2, 11];
+// let t = 0;
+// while (a.length > 1) {
+// 	t += a.filter(n => n < a[0]).length;
+// 	a.shift();
+// }
 
-const c = ["SEND", "MORE", "MONEY"];
+// console.log(t);
 
-let h = {};
+// let v = "1.0.5";
+// let w = "1.10.0";
 
-s.map(k => (h[k[0]] = k[1]));
+// let z = (v + "." + w).split(".").map(Number);
 
-let d = c
-	.map(word => word.split("").reduce((s, l) => (s += h[l]), ""))
-	.map(w => parseInt(w));
-let o = d[0] + d[1] == d[2];
-console.log(h, d, o);
+// console.log(z);
+
+// const n = 32;
+
+// let o = [[n, 1]],
+// 	f = [];
+// const p = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 33];
+
+// for (x = 2; x < n; x++) {
+// 	let a = [x],
+// 		b = n;
+// 	while (b % x == 0) {
+// 		if (b / x >= x) {
+// 			o.push([b / x, ...a]);
+// 			a.unshift(x);
+// 			if (b / x / x < x && b / x / x > 1) {
+// 				o.push([...a, b / x / x]);
+// 			}
+// 		}
+// 		b /= x;
+// 	}
+// }
+// o = o.sort((a, b) => a.length - b.length).sort((a, b) => b[0] - a[0]);
+
+// for (x = Math.floor(n / 2); x > 1; x--) {
+// 	if (n % x == 0) {
+// 		f.push(x);
+//   }
+//   f.forEach(num => {
+//     let a = [num], b = n;
+//     while (b % num == 0) {
+//       o.push(...a, b / num)
+//     }
+
+//   })
+// }
+// console.log(f);
+
+let currMonth = "12-2016";
+
+let month = parseInt(currMonth.substr(0, 2));
+let year = currMonth.substr(3, 4);
+let test = new Date(year, month).getDate();
+
+console.log(month, year, test);
