@@ -413,10 +413,13 @@
 // }
 // console.log(f);
 
-let currMonth = "12-2016";
+// let currMonth = "12-2016";
 
-let month = parseInt(currMonth.substr(0, 2));
-let year = currMonth.substr(3, 4);
-let test = new Date(year, month).getDate();
+// let month = parseInt(currMonth.substr(0, 2));
+// let year = currMonth.substr(3, 4);
+// let test = new Date(year, month).getDate();
 
-console.log(month, year, test);
+// console.log(month, year, test);
+const all_states = ["AZ", "NH", "NH", "MA", "NH", "NC", "MA"];
+let states = Array.from(new Set(all_states));
+console.log(states);
